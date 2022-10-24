@@ -23,7 +23,7 @@ initWeapon = {
     }];
 };
 
-chopWeapon = {
+chopWeapon = {	
 	player playAction "GestureSwing";
     [player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
 	player forceWalk true;
@@ -88,13 +88,13 @@ chopWeapon = {
 				
 				switch (player getVariable "killer") do {
                     case "wendigo": {
-				        [player, selectRandom ["growl_1","growl_2","growl_3","growl_4","growl_5","growl_6"], 50] remoteExecCall ["gonzka_fnc_say3D"];
+				        [player, selectRandom ["growl_1","growl_2","growl_3","growl_4","growl_5","growl_6"], 50] remoteExecCall ["say3D"];
 				    };
 					case "compactor": {
-				        [player, selectRandom ["evilLaugh_1","evilLaugh_2","evilLaugh_3","evilLaugh_4","evilLaugh_5","evilLaugh_6","evilLaugh_7"], 50] remoteExecCall ["gonzka_fnc_say3D"];
+				        [player, selectRandom ["evilLaugh_1","evilLaugh_2","evilLaugh_3","evilLaugh_4","evilLaugh_5","evilLaugh_6","evilLaugh_7"], 50] remoteExecCall ["say3D"];
 				    };
 					case "butcher": {
-		                [player, selectRandom ["growlWeird_1","growlWeird_2","growlWeird_3","growlWeird_4"], 50] remoteExecCall ["gonzka_fnc_say3D"];
+		                [player, selectRandom ["growlWeird_1","growlWeird_2","growlWeird_3","growlWeird_4"], 50] remoteExecCall ["say3D"];
 				    };
 				};
 				
